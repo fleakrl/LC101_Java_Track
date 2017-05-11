@@ -2,14 +2,12 @@ package org.launchcode.java.studios;
 
 import java.util.Scanner;
 
-/**
- * Created by rebeccahubbard on 5/8/17.
- * This class gets the
- */
-
 public class GetCircleRadiusFromUser {
 
-    public static double readRadiusFromUser() {
+    private GetCircleRadiusFromUser() {
+    }
+
+    private static double readRadiusFromUser() {
 
         //create scanner
         Scanner scan = new Scanner(System.in);
@@ -31,7 +29,7 @@ public class GetCircleRadiusFromUser {
     }
 
 
-    public static double main() {
+    static double getRadius() {
 
         //return scanner text
         return readRadiusFromUser();

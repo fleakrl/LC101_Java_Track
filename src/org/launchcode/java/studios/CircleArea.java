@@ -1,14 +1,15 @@
 package org.launchcode.java.studios;
 
 
-/**
- * Created by rebeccahubbard on 5/8/17.
- */
+
 public class CircleArea {
+
+    private CircleArea() {
+    }
 
     private static double calculateCircleArea() {
         double pi = 3.14;
-        double radius = GetCircleRadiusFromUser.main();
+        double radius = GetCircleRadiusFromUser.getRadius();
         return pi * radius * radius;
     }
 
