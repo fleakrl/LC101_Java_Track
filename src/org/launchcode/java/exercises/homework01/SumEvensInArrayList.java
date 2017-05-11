@@ -2,6 +2,7 @@ package org.launchcode.java.exercises.homework01;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ArrayList: Write a static method to find the sum of all the even numbers in a list.
@@ -13,7 +14,7 @@ public class SumEvensInArrayList {
     }
 
 
-    static int sumEvens(ArrayList<Integer> numberList) {
+    static int sumEvens(List<Integer> numberList) {
 
         int evenSum = 0;
 
@@ -30,7 +31,7 @@ public class SumEvensInArrayList {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> numberList = new ArrayList<>();
+        List<Integer> numberList = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
             numberList.add(i);
