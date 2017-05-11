@@ -15,17 +15,7 @@ public class SumEvensInArrayList {
 
 
     static int sumEvens(List<Integer> numberList) {
-
-        int evenSum = 0;
-
-        for (Integer aNumber : numberList) {
-
-            if (aNumber % 2 == 0) {
-                evenSum += aNumber;
-            }
-
-        }
-        return evenSum;
+        return numberList.stream().filter(number -> number % 2 == 0).mapToInt(Integer::intValue).sum();
     }
 
     public static void main(String[] args) {
