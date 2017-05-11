@@ -18,12 +18,10 @@ public class SumEvensInArrayList {
 
         int evenSum = 0;
 
-        for (int i = 0; i < numberList.size(); i++) {
+        for (Integer aNumber : numberList) {
 
-            int numberToCheck = numberList.get(i);
-
-            if (numberToCheck % 2 == 0) {
-                evenSum += numberToCheck;
+            if (aNumber % 2 == 0) {
+                evenSum += aNumber;
             }
 
         }
